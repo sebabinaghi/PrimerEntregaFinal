@@ -1,0 +1,22 @@
+[
+   {
+      "title": "PS4",
+      "price": "40000",
+      "thumbnail": "ps4.jpg",
+      "stock": "10",
+      "code": "gqc26",
+      "description": "consola de videojuegos",
+      "timestamp": "11/1/2022",
+      "id": 1
+   },
+   {
+      "title": "PS4",
+      "price": "350000",
+      "thumbnail": "ps5.jpg",
+      "stock": "15",
+      "code": "agw96",
+      "description": "consola de videojuegos",
+      "timestamp": "11/1/2022",
+      "id": 3
+   }
+]

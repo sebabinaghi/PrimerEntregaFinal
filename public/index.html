@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="/socket.io/socket.io.js"  >  </script>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@700&family=Hammersmith+One&family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <form id="product-form" >
+        Title: <input type="text" name="title" placeholder="Title" >
+        Price: <input type="number" name="price"  placeholder="Price">
+        Thumbnail: <input type="text" name="thumbnail" placeholder="Thumbmail">
+        <button type="submit" >+ Add Product</button>
+    </form>
+
+   <div id="contendor"></div>
+   <h1>Chat</h1>
+
+   <div id="chat-container" >
+      <div id="chat-window">
+        <div id="output"></div>
+        <div id="actions"></div>
+      </div>
+
+      <input type="text" id="username"  placeholder="Username" >
+      <input type="text"  id="message" placeholder="mensaje" >
+      <button id="send">Enviar</button>
+
+   </div>
+
+    
+
+   <!-- <script src="chat.js" ></script> -->
+    <script src="assets/js/cliente.js" ></script>
+</body>
+</html>

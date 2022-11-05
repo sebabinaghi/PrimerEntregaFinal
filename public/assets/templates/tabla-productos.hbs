@@ -1,0 +1,55 @@
+<div>
+    <h1 class="title">Lista de productos</h1>
+
+    <table class="product-list">
+        <tr>
+            <th>Título</th>
+            <th>Precio</th>
+            <th>Miniatura</th>
+        </tr>
+        {{#if productos.length}}
+        {{#each productos}}
+        <tr>
+            <td><p>{{this.title}}</p></td>
+            <td><p>$ {{this.price}}</p></td>
+            <td><img class="img" height="100px" width="100px" src={{this.thumbnail}} /></td>
+        </tr>
+        {{/each}}
+        {{else}}
+        <p>No posee productos ingresados</p>
+        {{/if}}
+    </table>
+
+    <a href="/api"><button>Volver al formulario de carga</button></a>
+
+</div>
+
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid;
+    }
+    .title {
+        text-align: center;
+    }
+    .product-list {
+        width: 100%;
+    }
+
+    p{
+       color: green;
+       font-size: 2em;
+       font-weight: bold;
+     
+    }
+
+    {{!-- *{ background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MCIgaGVpZ2h0PSIzMCI+CjxyZWN0IHdpZHRoPSI5MCIgaGVpZ2h0PSIzMCIgZmlsbD0iIzAwYTlmMSI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iOTAiIGhlaWdodD0iMTgiIGZpbGw9IiMyNmJhZjQiPjwvcmVjdD4KPC9zdmc+");
+    } --}}
+
+    .img{
+         border-radius: 15px;
+        color: 2px solid rgb(0, 0, 0);
+    }
+
+</style

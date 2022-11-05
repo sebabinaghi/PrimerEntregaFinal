@@ -1,0 +1,19 @@
+{
+  "name": "Primer entrega",
+  "version": "1.0.0",
+  "description": "primer entrega de proyecto final",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.6",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "socket.io": "^4.5.3"
+  }
+}
