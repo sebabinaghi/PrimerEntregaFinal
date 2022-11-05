@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 
-app.listen(PORT, ()=>  console.log (`Escuchando en puerto ${PORT}`))
+app.listen(PORT, ()=>  console.log (`escuchando en puerto ${PORT}`))
 
 
 app.use("/api/productos", routerProductos)
